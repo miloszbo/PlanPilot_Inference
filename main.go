@@ -24,6 +24,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	client.Models()
+
 	grpcServer := grpc.NewServer()
 	if err != nil {
 		log.Fatal(err)
